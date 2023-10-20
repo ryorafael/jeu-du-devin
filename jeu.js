@@ -14,10 +14,10 @@ function didIWin(givenNumber, target) {
     } else {
         alert('Bravo ! Vous avez deviné le nombre.');
         return true;
-    }
+    } 
 }
 function gamePlay() {
-    const targetNumber = Math.floor(Math.random() * 51);
+    let targetNumber = Math.floor(Math.random() * 51);
     let attempts = 0;
 
     while (true) {
@@ -28,7 +28,7 @@ function gamePlay() {
             break; 
         }
     }
-    alert('Bravo ! Vous avez deviné le nombre en ${attempts} tentatives.');
+    alert(`Bravo ! Vous avez deviné le nombre en ${attempts} tentatives.`);
 }
 
 gamePlay();
